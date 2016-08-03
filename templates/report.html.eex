@@ -1,0 +1,12 @@
+<html>
+<head>
+  <script>
+    var runTimes = <%= run_times %>;
+  </script>
+</head>
+<body>
+  <p>
+    Run times: <%= run_times %>
+  </p>
+</bod>
+</html>
