@@ -1,6 +1,8 @@
 # BencheeD3
 
-**TODO: Add description**
+**Work in progress, not yet published or usable. Let's see if I can make this work :)**
+
+Formatter for [benchee](github.com/PragTob/benchee) to produce some standalone HTML with nice graphs etc. from your benchee benchmarking results :)
 
 ## Installation
 
@@ -21,4 +23,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [applications: [:benchee_d3]]
     end
     ```
-
