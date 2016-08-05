@@ -40,6 +40,6 @@ defmodule Benchee.Formatters.D3 do
   """
   def format(suite) do
     suite_json = Benchee.Formatters.JSON.format(suite)
-    IO.puts report(suite_json)
+    report(suite_json)
   end
 end
