@@ -3,6 +3,9 @@
   <script>
     var suite = <%= suite_json %>;
   </script>
+  <script>
+
+  </script>
 </head>
 <body>
   <p>

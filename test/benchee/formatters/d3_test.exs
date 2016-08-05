@@ -35,4 +35,14 @@ defmodule Benchee.Formatters.D3Test do
       assert html =~ expected_content
     end
   end
+
+  test ".output returns the suite again unchanged" do
+    try do
+      return = Benchee.Formatters.D3.output(@sample_suite)
+      assert return == @sample_suite
+      assert File.exists? @filename
+    after
+      File.rm! @filename
+    end
+  end
 end
