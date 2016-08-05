@@ -1,15 +1,29 @@
 <html>
 <head>
-  <script>
-    var suite = <%= suite_json %>;
-  </script>
-  <script>
-
-  </script>
+  <script src="assets/javascripts/d3.js"></script>
+  <style>
+    .chart div {
+      background-color: green;
+    }
+  </style>
 </head>
 <body>
   <p>
     Suite JSON: <%= suite_json %>
   </p>
+  <div class="chart">
+  </div>
+  <script>
+    var suite = <%= suite_json %>;
+    var run_times = suite.run_times;
+    var statistics = suite.statistics;
+    d3.select(".chart")
+      .selectAll("div")
+        .data(run_times["flat_map"])
+      .enter().append("div")
+        .style("width", function(i) {return i + "px";})
+        .style("height", "1px")
+        // .text(function(i) {return i;});
+  </script>
 </bod>
 </html>
