@@ -1,7 +1,9 @@
 defmodule Benchee.Formatters.D3 do
   require EEx
 
-  EEx.function_from_file :def, :report, "templates/report.html.eex", [:run_times]
+  EEx.function_from_file :def, :report,
+                         "templates/report.html.eex",
+                         [:suite_json]
 
   @moduledoc """
   Functionality for converting Benchee benchmarking results to an HTML page
@@ -36,7 +38,8 @@ defmodule Benchee.Formatters.D3 do
   somewhere, such as a file through `IO.write/2`.
 
   """
-  def format(%{statistics: jobs}) do
-    IO.puts report(jobs)
+  def format(suite) do
+    suite_json = Benchee.Formatters.JSON.format(suite)
+    IO.puts report(suite_json)
   end
 end

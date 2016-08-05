@@ -27,6 +27,8 @@ defmodule BencheeD3.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    []
+    [
+      {:benchee_json, "~> 0.1.0", path: "../benchee_json"}
+    ]
   end
 end

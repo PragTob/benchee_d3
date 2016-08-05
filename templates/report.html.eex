@@ -1,12 +1,12 @@
 <html>
 <head>
   <script>
-    var runTimes = <%= run_times %>;
+    var suite = <%= suite_json %>;
   </script>
 </head>
 <body>
   <p>
-    Run times: <%= run_times %>
+    Suite JSON: <%= suite_json %>
   </p>
 </bod>
 </html>
