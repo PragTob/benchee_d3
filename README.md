@@ -1,3 +1,7 @@
+# This was an attempt and was not discontinued, in the end I ended up with plotly.js which you can see over at [benchee-html](https://github.com/PragTob/benchee_html)
+
+---------------------------------------------------------------------------
+
 # BencheeD3
 
 **Work in progress, not yet published or usable. Let's see if I can make this work :)**
